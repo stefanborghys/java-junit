@@ -13,7 +13,7 @@ import org.junit.runners.Parameterized.Parameters;
 /**
  * JUnit parameterized test example.</br>
  * </br>
- * This example is inspired upon Kevin Hunter's blog about JUnit parameterized tests.</br>
+ * This example is inspired upon Kevin Hunter's blog post about JUnit parameterized tests.</br>
  * source: http://www.silverbaytech.com/2013/01/21/junit-tricks-part-1-parameterized-tests/
  * @author seriousbusiness
  *
