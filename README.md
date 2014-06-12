@@ -13,7 +13,7 @@ Steps:
 3. add a public **static method** returning a collection of object arrays containing the parameter values for the constructor.  Don't forget to annotate this method with **@Parameters**!  
 4. **implement** a **test** using the parameters received by the constructor  
   
-Benefits:  
+Benefits:
 - compared to looping a single test with parameters, all tests are always executed!  
 - every test is independent (result of previous benefit)  
   
