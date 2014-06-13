@@ -1,9 +1,9 @@
 java-junit
 ==========
 
-A collection of JUnit testing framework possibilities.
+A collection of JUnit testing framework possibilities using JUnit 4.
 
-# Parameterized JUnit test
+# Parameterized test
 
 An example of a parameterized JUnit test can be found in TestBigDecimalNumber  
 
@@ -19,7 +19,7 @@ Benefits:
   
 source: [http://www.silverbaytech.com/2013/01/21/junit-tricks-part-1-parameterized-tests/](http://www.silverbaytech.com/2013/01/21/junit-tricks-part-1-parameterized-tests/)  
   
-# Parameterized JUnit test using JUnit Params project  
+# Parameterized test using JUnit Params  
   
 An example of a parameterized JUnit test using JUnit Params can be found in TestBigDecimalNumber2
   
@@ -31,7 +31,7 @@ Steps:
 JUnit Params project: [https://code.google.com/p/junitparams/](https://code.google.com/p/junitparams/)  
 source: [http://www.silverbaytech.com/2013/01/21/junit-tricks-part-1-parameterized-tests/](http://www.silverbaytech.com/2013/01/21/junit-tricks-part-1-parameterized-tests/)  
   
-# JUnit @Rule and TestRule implementation  
+# @Rule annotation and TestRule implementation  
   
 An example of a JUnit @Rule and TestRule implementation can be found in TestPersonRepository
 
