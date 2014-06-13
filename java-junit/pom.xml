@@ -8,11 +8,36 @@
   <name>java-junit</name>
   <url>http://www.seriousbusiness.be</url>
   <dependencies>
+  	<!-- JUnit 4 -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <!-- JUnit Params (Local jar) - https://code.google.com/p/junitparams -->
+    <dependency>
+	    <groupId>junitparams</groupId>
+	    <artifactId>JUnitParams</artifactId>
+	    <version>1.0.2</version>
+	    <scope>system</scope>
+	    <systemPath>${project.basedir}/lib/JUnitParams-1.0.2.jar</systemPath>
+	</dependency>
+    <!-- Logging -->
+    <dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-api</artifactId>
+		<version>1.7.7</version>
+	</dependency>
+	<dependency>
+		<groupId>ch.qos.logback</groupId>
+		<artifactId>logback-core</artifactId>
+		<version>1.1.2</version>
+	</dependency>
+	<dependency>
+		<groupId>ch.qos.logback</groupId>
+		<artifactId>logback-classic</artifactId>
+		<version>1.1.2</version>
+	</dependency>
   </dependencies>
 </project>

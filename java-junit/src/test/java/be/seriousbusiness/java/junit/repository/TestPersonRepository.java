@@ -10,6 +10,8 @@ import org.junit.Test;
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import be.seriousbusiness.java.junit.entity.Person;
 
@@ -22,6 +24,7 @@ import be.seriousbusiness.java.junit.entity.Person;
  *
  */
 public class TestPersonRepository {
+	private static final Logger LOGGER=LoggerFactory.getLogger(TestPersonRepository.class);
 	private PersonRepository personRepository;
 	
 	/**
@@ -51,6 +54,7 @@ public class TestPersonRepository {
 	 */
 	@Test
 	public void testSaveUniqueEmail(){
+		LOGGER.debug("BEGIN - testSaveUniqueEmail()");
 		final Person filip=new Person();
 		filip.setEmail("filip@test.com");
 		filip.setFirstName("filip");
@@ -71,6 +75,7 @@ public class TestPersonRepository {
 
 				@Override
 				public void evaluate() throws Throwable {
+					LOGGER.debug("BEGIN - PersonRepositoryTestRule.apply({},{}).evaluate()",base,description);
 					try{
 						base.evaluate();
 					}catch(final Throwable e){
@@ -78,6 +83,7 @@ public class TestPersonRepository {
 						// so we can bring the PersonRepository in a neutral state.
 						personRepository.deleteAll();
 					}
+					LOGGER.debug("END - PersonRepositoryTestRule.apply({},{}).evaluate()",base,description);
 				}
 				
 			};
