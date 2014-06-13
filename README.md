@@ -30,3 +30,9 @@ Steps:
   
 JUnit Params project: [https://code.google.com/p/junitparams/](https://code.google.com/p/junitparams/)  
 source: [http://www.silverbaytech.com/2013/01/21/junit-tricks-part-1-parameterized-tests/](http://www.silverbaytech.com/2013/01/21/junit-tricks-part-1-parameterized-tests/)  
+  
+# JUnit @Rule and TestRule implementation  
+  
+An example of a JUnit @Rule and TestRule implementation can be found in TestPersonRepository
+
+source: [http://www.silverbaytech.com/2013/01/28/junit-tricks-part-2-junit-rules/](http://www.silverbaytech.com/2013/01/28/junit-tricks-part-2-junit-rules/)  
