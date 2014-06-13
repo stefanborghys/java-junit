@@ -68,6 +68,13 @@ public class TestPersonRepository {
 		fail("A person with an already used email cannot be saved.");
 	}
 	
+	/**
+	 * A TestRule implementation wraps around the execution of a single test.</br>
+	 * It gives control over the things we can do right before and after a test.</br>
+	 * This for example makes it possible to anticipate the outcome of a test and react on it.
+	 * @author seriousbusiness
+	 *
+	 */
 	private class PersonRepositoryTestRule implements TestRule{
 
 		public Statement apply(final Statement base,final Description description) {
