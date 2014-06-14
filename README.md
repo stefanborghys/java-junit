@@ -45,3 +45,12 @@ A handy feature when you don't want your test to stop after the first failure.
 An example of this can be found in TestPerson.  
   
 JUnit rule info: [https://github.com/junit-team/junit/wiki/Rules](https://github.com/junit-team/junit/wiki/Rules)
+  
+## ExpectedException Rule  
+  
+This rule can be used to expect specific exception and messages to be thrown during the test.  
+An example can be found in TestPerson2.  
+  
+JUnit rule info: [https://github.com/junit-team/junit/wiki/Rules](https://github.com/junit-team/junit/wiki/Rules)  
+  
+## Rule
