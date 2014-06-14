@@ -15,7 +15,7 @@ import be.seriousbusiness.java.junit.business.Person;
  * This rule can be used to catch multiple errors in one test and print them out in one failure trace.</br>
  * A handy feature when you don't want your test to stop after the first failure.</br>
  * </br>
- * JUnit info: https://github.com/junit-team/junit/wiki/Rules
+ * JUnit rule info: https://github.com/junit-team/junit/wiki/Rules
  * @author seriousbusiness
  *
  */
@@ -57,12 +57,6 @@ public class TestPerson {
 		errorCollector.checkThat("The first name should be null.",person.getFirstName(),CoreMatchers.nullValue());
 		errorCollector.checkThat("The last name should be null.",person.getLastName(),CoreMatchers.nullValue());
 		errorCollector.checkThat("The age should be null.",person.getAge(),CoreMatchers.nullValue());
-
-		/*
-		errorCollector.apply(base, description);
-		errorCollector.checkThat(reason, value, matcher);
-		errorCollector.checkSucceeds(callable);
-		*/
 	}
 	
 	/**
