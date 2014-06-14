@@ -36,3 +36,12 @@ source: [http://www.silverbaytech.com/2013/01/21/junit-tricks-part-1-parameteriz
 An example of a JUnit @Rule and TestRule implementation can be found in TestPersonRepository
 
 source: [http://www.silverbaytech.com/2013/01/28/junit-tricks-part-2-junit-rules/](http://www.silverbaytech.com/2013/01/28/junit-tricks-part-2-junit-rules/)  
+JUnit rule info: [https://github.com/junit-team/junit/wiki/Rules](https://github.com/junit-team/junit/wiki/Rules)
+  
+## ErrorCollector Rule  
+  
+This rule can be used to catch multiple errors in one test and print them out in one failure trace.  
+A handy feature when you don't want your test to stop after the first failure.  
+An example of this can be found in TestPerson.  
+  
+JUnit rule info: [https://github.com/junit-team/junit/wiki/Rules](https://github.com/junit-team/junit/wiki/Rules)
