@@ -25,6 +25,7 @@ public class TestPerson2 {
 		final Person person=new Person();
 		expectedException.expect(IllegalArgumentException.class);
 		expectedException.expectMessage("The first name is null");
+		// Don't forget to expect before the exception is thrown!
 		person.setFirstName(null);
 	}
 
