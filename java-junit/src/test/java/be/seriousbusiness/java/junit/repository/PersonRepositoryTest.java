@@ -23,14 +23,14 @@ import be.seriousbusiness.java.junit.entity.Person;
  * @author seriousbusiness
  *
  */
-public class TestPersonRepository {
-	private static final Logger LOGGER=LoggerFactory.getLogger(TestPersonRepository.class);
+public class PersonRepositoryTest {
+	private static final Logger LOGGER=LoggerFactory.getLogger(PersonRepositoryTest.class);
 	private PersonRepository personRepository;
 	
 	/**
 	 * The constructor creates a new PersonRepository used by all tests.
 	 */
-	public TestPersonRepository(){
+	public PersonRepositoryTest(){
 		personRepository=new PersonRepository();
 	}
 	

@@ -22,14 +22,14 @@ import be.seriousbusiness.java.junit.entity.Person;
  * @author seriousbusiness
  *
  */
-public class TestPersonRepository2 {
-	private static final Logger LOGGER=LoggerFactory.getLogger(TestPersonRepository2.class);
+public class PersonRepositoryTest2 {
+	private static final Logger LOGGER=LoggerFactory.getLogger(PersonRepositoryTest2.class);
 	private PersonRepository personRepository;
 	
 	/**
 	 * The constructor creates a new PersonRepository used by all tests.
 	 */
-	public TestPersonRepository2(){
+	public PersonRepositoryTest2(){
 		personRepository=new PersonRepository();
 	}
 	
@@ -52,7 +52,7 @@ public class TestPersonRepository2 {
 	 * Tries to save two persons with the same email address.</br>
 	 */
 	@Test
-	@TestConfigurationAnnotation("testSaveUniqueEmail")
+	@ConfigurationAnnotationTest("testSaveUniqueEmail")
 	public void testSaveUniqueEmail(){
 		LOGGER.debug("BEGIN - testSaveUniqueEmail()");
 		final Person filip=new Person();
@@ -84,7 +84,7 @@ public class TestPersonRepository2 {
 				public void evaluate() throws Throwable {
 					LOGGER.debug("BEGIN - PersonRepositoryTestRule.apply({},{}).evaluate()",base,description);
 					try{
-						final TestConfigurationAnnotation testConfigurationAnnotation=description.getAnnotation(TestConfigurationAnnotation.class);
+						final ConfigurationAnnotationTest testConfigurationAnnotation=description.getAnnotation(ConfigurationAnnotationTest.class);
 						final String value=testConfigurationAnnotation.value();
 						LOGGER.debug("The tests @TestConfigurationAnnotation value is: {}",value);
 						base.evaluate();

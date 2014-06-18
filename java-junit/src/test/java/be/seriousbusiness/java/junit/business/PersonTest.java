@@ -19,7 +19,7 @@ import be.seriousbusiness.java.junit.business.Person;
  * @author seriousbusiness
  *
  */
-public class TestPerson {
+public class PersonTest {
 	/**
 	 * Collect multiple errors in one test method.
 	 */

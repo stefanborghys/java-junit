@@ -12,7 +12,7 @@ import org.junit.rules.ExpectedException;
  * @author seriousbusiness
  *
  */
-public class TestPerson2 {
+public class PersonTest2 {
 	@Rule
 	public ExpectedException expectedException=ExpectedException.none();
 	

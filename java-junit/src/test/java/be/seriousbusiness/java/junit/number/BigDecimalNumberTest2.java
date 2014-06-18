@@ -22,7 +22,7 @@ import junitparams.Parameters;
 // 1. Add RunWith annotation using JUnitParamsRunner class as parameter
 // The project can be found on: https://code.google.com/p/junitparams/
 @RunWith(JUnitParamsRunner.class)
-public class TestBigDecimalNumber2 {
+public class BigDecimalNumberTest2 {
 	
 	/**
 	 * Returns the parameters for every boundary to test.

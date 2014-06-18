@@ -20,7 +20,7 @@ import org.junit.runners.Parameterized.Parameters;
  */
 //1. Add @RunWith annotation to JUnit test class
 @RunWith(value=Parameterized.class) 
-public class TestBigDecimalNumber {
+public class BigDecimalNumberTest {
 	private final BigDecimal number,minimum,maximum;
 	private final boolean isBetweenOrEqual;
 	
@@ -32,7 +32,7 @@ public class TestBigDecimalNumber {
 	 * @param isBetweenOrEqual the result to expect
 	 */
 	// 2. Add a parameterized constructor which receives and stores the values under test
-	public TestBigDecimalNumber(final BigDecimal number,final BigDecimal minimum, final BigDecimal maximum,final boolean isBetweenOrEqual){
+	public BigDecimalNumberTest(final BigDecimal number,final BigDecimal minimum, final BigDecimal maximum,final boolean isBetweenOrEqual){
 		this.number=number;
 		this.minimum=minimum;
 		this.maximum=maximum;
