@@ -53,14 +53,21 @@ An example of this can be found in PersonTest.
 The ErrorCollector can also make use of Matchers to test an expected result.  
 For this the JUnit 4 framework relies upon the Hamcrest framework.  
   
-<code>errorCollector.checkThat("The first name should be null.",  person.getFirstName(),  CoreMatchers.nullValue());</code>  
+<code>errorCollector.checkThat("The first name should be null.", person.getFirstName(), CoreMatchers.nullValue());</code>  
   
 Hamcrest: [http://hamcrest.org/JavaHamcrest/](http://hamcrest.org/JavaHamcrest/)  
 JUnit rule info: [https://github.com/junit-team/junit/wiki/Rules](https://github.com/junit-team/junit/wiki/Rules)
   
 ## ExpectedException Rule  
   
+<code>@Rule</code>  
+<code>public ExpectedException expectedException=ExpectedException.none();</code>  
+  
 This rule can be used to expect specific exception and messages to be thrown during the test.  
+  
+<code>expectedException.expect(IllegalArgumentException.class);</code>  
+<code>expectedException.expectMessage("The first name is null");</code>  
+  
 An example can be found in PersonTest2.  
   
 JUnit rule info: [https://github.com/junit-team/junit/wiki/Rules](https://github.com/junit-team/junit/wiki/Rules)  
