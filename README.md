@@ -53,4 +53,8 @@ An example can be found in TestPerson2.
   
 JUnit rule info: [https://github.com/junit-team/junit/wiki/Rules](https://github.com/junit-team/junit/wiki/Rules)  
   
-## Rule
+## ExternalResource Rule  
+  
+This rule can be used to set up an external resource like a socket, server, database before a test and tear it down afterwards.  
+  
+JUnit rule info: [https://github.com/junit-team/junit/wiki/Rules](https://github.com/junit-team/junit/wiki/Rules)  
